@@ -35,7 +35,7 @@ const PeopleComponent = () => {
             people.name.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setSearchResults(results);
-      }, [searchTerm]);
+      }, [searchTerm,peoples]);
 
     return (  
             <div className="bg-white">

@@ -1,11 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import planet from '../../assets/planet.png';
-import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import space from "../../assets/sw.jpg"
+
 
 
 const PlanetComponent = () => {
@@ -34,7 +30,7 @@ const PlanetComponent = () => {
             planet.name.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setSearchResults(results);
-      }, [searchTerm]);
+      }, [searchTerm,planets]);
 
     return (
       <div class="bg-white">

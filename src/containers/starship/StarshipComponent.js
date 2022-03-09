@@ -32,7 +32,7 @@ const StarshipComponent = () => {
             starship.name.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setSearchResults(results);
-      }, [searchTerm]);
+      }, [searchTerm,starships]);
 
     return (
       <div class="bg-white">

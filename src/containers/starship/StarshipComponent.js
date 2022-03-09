@@ -1,11 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import starship from '../../assets/starship.png';
-import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import space from "../../assets/sw.jpg"
+
 
 
 const StarshipComponent = () => {

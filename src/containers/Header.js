@@ -5,6 +5,7 @@ import storm from '../assets/storm.png';
 import planet from '../assets/planet.png';
 import out from '../assets/out.png';
 import starship from '../assets/starship.png';
+import coeur from '../assets/coeur.png'
 
 
 const Header = ({handleLogout}) =>{
@@ -31,7 +32,7 @@ const Header = ({handleLogout}) =>{
               </Link> 
 
               <Link to="/favorite">
-                <LazyLoadImage width={40} className="mt-3 mb-3"  effect="blur" src={starship} alt={"link.alt"} />
+                <LazyLoadImage width={40} className="mt-3 mb-3"  effect="blur" src={coeur} alt={"link.alt"} />
               </Link> 
                       
               <LazyLoadImage onClick={handleLogout} width={35} className="mt-3 mb-3"  effect="blur" src={out} alt={"link.alt"} />

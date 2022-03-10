@@ -9,7 +9,7 @@ const StarshipListing = () => {
     
     const dispatch = useDispatch();
     const fetchProducts = async () =>{
-            const response = await axios.get("http://localhost:4242/starship").catch((err)=> {console.log(err)})
+            const response = await axios.get("https://back-starwars.herokuapp.com/starship").catch((err)=> {console.log(err)})
             console.log("IOC",response)
             dispatch(setProducts(response.data))
     }

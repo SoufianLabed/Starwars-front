@@ -24,7 +24,7 @@ const FavoriteListing = () => {
             let i; 
             console.log(favPlanets.length)
             for(i=0;i<favPlanets.length;i++){
-                let response = await axios.get(`http://localhost:4242/people/${favPlanets[i]}`).catch((err)=> {console.log(err)})
+                let response = await axios.get(`https://back-starwars.herokuapp.com/people/${favPlanets[i]}`).catch((err)=> {console.log(err)})
                 favPlanetsRequested.push(response.data)
             }
             setFavorite(favPlanetsRequested)
@@ -48,7 +48,7 @@ const FavoriteListing = () => {
             let i; 
             console.log(favPlanets.length)
             for(i=0;i<favPlanets.length;i++){
-                let response = await axios.get(`http://localhost:4242/planet/${favPlanets[i]}`).catch((err)=> {console.log(err)})
+                let response = await axios.get(`https://back-starwars.herokuapp.com/planet/${favPlanets[i]}`).catch((err)=> {console.log(err)})
                 favPlanetsRequested.push(response.data)
             }
             setFavoritePlanets(favPlanetsRequested)

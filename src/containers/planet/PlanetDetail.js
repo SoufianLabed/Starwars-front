@@ -19,7 +19,7 @@ const PlanetDetail = () => {
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
     const response = await axios
-      .get(`http://localhost:4242/planet/${id}`)
+      .get(`https://back-starwars.herokuapp.com/planet/${id}`)
       .catch((err) => {
         console.log("Err: ", err);
       });

@@ -15,9 +15,9 @@ const StarshipDetail = () => {
 
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
-     console.log("ici",`http://localhost:4242/starship/${id}`)
+     console.log("ici",`https://back-starwars.herokuapp.com/starship/${id}`)
     const response = await axios
-      .get(`http://localhost:4242/starship/${id}`)
+      .get(`https://back-starwars.herokuapp.com/starship/${id}`)
       .catch((err) => {
         console.log("Err: ", err);
       });

@@ -19,9 +19,9 @@ const PeopleDetails = () => {
 
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
-     console.log("ici",`http://localhost:4242/people/${id}`)
+     console.log("ici",`https://back-starwars.herokuapp.com/people/${id}`)
     const response = await axios
-      .get(`http://localhost:4242/people/${id}`)
+      .get(`https://back-starwars.herokuapp.com/people/${id}`)
       .catch((err) => {
         console.log("Err: ", err);
       });
